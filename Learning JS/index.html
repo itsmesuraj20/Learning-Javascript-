@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="checkkar" >Suraj Singh is a Mahakal Bhakt and a devil as well , acchai ke liya bura banega </h1>
+    
+    <button id="clickButton">Click Me</button>
+    <div id="add-D"></div>
+    
+    
+</body>
+<script>
+    const button = document.getElementById("clickButton");
+    const container = document.getElementById("add-D");
+    let c =1;
+
+    button.addEventListener('click', ()=>{
+        const el = document.createElement("li");
+
+        el.innerText = c;
+        container.appendChild(el);
+        c++;
+    })
+
+    //Working 
+    // const allChildren = document.querySelector("body").children;
+    
+    // for (let i = 0; i < allChildren.length; i++) {
+    //     allChildren.item(i).addEventListener('click',() =>{
+    //         allChildren.item(i).remove();
+    //     }
+    //     )};
+        //Working Done
+
+    //Working Start
+    // const ee = document.getElementById("checkkar");
+    // const el = document.getElementById("clickButton");
+
+    // function doSomething(){     
+    // if(ee.style.color === 'red'){
+    //     ee.style.color = "blue";
+    // }
+    // else{
+    //     ee.style.color ="red";
+    // }}
+    // el.addEventListener("click" , doSomething );
+    //Woring Done
+
+
+
+
+
+
+</script>
+</html>
